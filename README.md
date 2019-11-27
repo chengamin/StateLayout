@@ -12,12 +12,12 @@
 			  ...
 			  maven { url 'https://jitpack.io' }
 		  }
-  	}
+   }
   ```
 ### Step2. Add the Module dependency
   ```Module Gradle代码
     dependencies {
-	        implementation 'com.github.chengamin:StateLayout:Tag'
-	  }
+	        implementation 'com.github.chengamin:StateLayout:1.0'
+    }
   ```
 ## 代码调用
