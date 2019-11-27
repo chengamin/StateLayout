@@ -103,11 +103,11 @@
   	private StateLayout stateLayout = null;
 	
 	stateLayout = findViewById(R.id.stateLayout);
-	// 使用作者自己定义的布局管理器
-	stateLayout.setStateLayoutManager();
-	// 自定义自己的布局管理器,继承自StateLayoutManager
-     // stateLayout.setStateLayoutManager(new CustomLayoutManager(this));
-  	// 切换状态
-	stateLayout.setState(State.LOADING,null);
+        // 使用作者自己定义的布局管理器
+        stateLayout.setStateLayoutManager();
+        // 自定义自己的布局管理器,继承自StateLayoutManager
+        // stateLayout.setStateLayoutManager(new CustomLayoutManager(this));
+        // 切换状态
+        stateLayout.setState(State.LOADING,null);
   ```
 
