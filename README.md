@@ -3,6 +3,21 @@
 但是我们不能在一个xml页面中,对每个状态进行管理,那样不仅费时、费力,更属于重复不必要的操作,因为我们将代码进行向上抽取,抽取为一个自定义ViewGroup.
 另外,对于每个不同的加载样式,我们向外进行了暴露,可以加载用户高度自定义的样式.
 
+## 枚举字段声明
+| Enum name | Description                    |
+| ------------- | ------------------------------ |
+| `State.LOADING`      | 数据加载中       |
+| `State.EMPTY`   | 加载成功,数据为空     |
+| `State.ERROR`   | 数据加载失败     |
+| `State.SUCCESS`   | 数据加载成功     |
+
+## 方法声明
+| Enum name | params |Description                    |
+| ------------- | ----------- | ------------------- |
+| `setStateLayoutManager()`      | 无 |使用作者默认的布局管理器,布局以及默认写好   `不建议使用,因为重新点击事件没有重写`    |
+| `setStateLayoutManager()`   | ? extends StateLayoutManager     |自定义布局管理器,以及重新点击的事件|
+| `setState`   | State     |改变当前的布局状态,切换布局|
+
 
 ## 依赖引入
 ### Step1. Add it in your root build.gradle at the end of repositories:
