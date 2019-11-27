@@ -4,3 +4,20 @@
 另外,对于每个不同的加载样式,我们向外进行了暴露,可以加载用户高度自定义的样式.
 
 
+## 依赖引入
+### Step1. Add it in your root build.gradle at the end of repositories:
+  ```Project Gradle代码
+    allprojects {
+		  repositories {
+			  ...
+			  maven { url 'https://jitpack.io' }
+		  }
+  	}
+  ```
+### Step2. Add the Module dependency
+  ```Module Gradle代码
+    dependencies {
+	        implementation 'com.github.chengamin:StateLayout:Tag'
+	  }
+  ```
+## 代码调用
